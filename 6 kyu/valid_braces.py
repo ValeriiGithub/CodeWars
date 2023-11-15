@@ -1,9 +1,14 @@
-def valid_braces(string):
-    brackets_counter = {}
-    for bracket in string:
-        brackets_counter[bracket] = brackets_counter.get(bracket, 0) + 1
-    print(brackets_counter)
+def valid_braces(s):
+    stack = []
+    mapping = {')': '(', ']': '[', '}': '{'}
 
-    return None
+    for char in s:
+        if char in mapping.values():
+            stack.append(char)
+        elif char in mapping.keys():
+            if not stack or stack.pop() != mapping[char]:
+                return False
+        else:
+            return False
 
-valid_braces("(({[[]])))")
+    return not stack

@@ -1,3 +1,6 @@
+"""
+https://www.codewars.com/kata/5547cc7dcad755e480000004
+"""
 def remov_nb(n):
     total_sum = n * (n + 1) // 2  # Sum of numbers from 1 to n
     result = []

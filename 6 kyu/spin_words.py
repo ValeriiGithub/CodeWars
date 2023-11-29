@@ -8,3 +8,6 @@ def spin_words(sentence):
             res.append(word[::-1])
 
     return " ".join(res)
+
+def spin_words_2(sentence):
+    return " ".join([word[::-1] if len(word) >= 5 else word for word in sentence.split(" ")])

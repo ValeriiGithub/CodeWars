@@ -23,3 +23,10 @@ def duplicate_encode(s):
             result += ")"
     # return the result
     return result
+
+
+# test the function with some examples
+print(duplicate_encode("din"))  # (((
+print(duplicate_encode("recede"))  # ()()()
+print(duplicate_encode("Success"))  # )())())
+print(duplicate_encode("(( @"))  # ))((

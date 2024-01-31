@@ -4,7 +4,7 @@ pytest test_your_module.py  # замените на имя вашего тест
 """
 
 import pytest
-from 8_kyu.century import century
+from kyu_8.century import century
 
 
 def test_century():

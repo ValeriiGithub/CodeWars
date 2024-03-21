@@ -26,5 +26,6 @@ def top_3_words_02(text):
                 count[word] += 1
             else:
                 count[word] = 1
+                
     return sorted(count, key=count.get, reverse=True)[:3]
     
